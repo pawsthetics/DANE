@@ -1,0 +1,3 @@
+<!DOCTYPE html>
+
+<sript src="{{ "/js/importcsv.js" | prepend: site.baseurl}}"></script> 
