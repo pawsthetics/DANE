@@ -1,38 +1,39 @@
-//because read.csv is in utils
-ocpu.seturl("//public.opencpu.org/ocpu/library/utils/R")
+<script type="text/javascript">  
+    $(document).ready(function() {
 
-//actual handler
-$("#submitbutton").on("click", function(){
+    // The event listener for the file upload
+    document.getElementById('txtFileUpload').addEventListener('change', upload, false);
 
-    //arguments
-    var myheader = $("#header").val() == "true";
-    var myfile = $("#csvfile")[0].files[0];
-        
-    if(!myfile){
-        alert("No file selected.");
-        return;
+    // Method that checks that the browser supports the HTML5 File API
+    function browserSupportFileUpload() {
+        var isCompatible = false;
+        if (window.File && window.FileReader && window.FileList && window.Blob) {
+        isCompatible = true;
+        }
+        return isCompatible;
     }
 
-    //disable the button during upload
-    $("#submitbutton").attr("disabled", "disabled");
-
-    //perform the request
-    var req = ocpu.call("read.csv", {
-        "file" : myfile,
-        "header" : myheader
-    }, function(session){
-        session.getConsole(function(outtxt){
-            $("#output").text(outtxt); 
-        });
-    });
-        
-    //if R returns an error, alert the error message
-    req.fail(function(){
-        alert("Server error: " + req.responseText);
-    });
-    
-    //after request complete, re-enable the button 
-    req.always(function(){
-        $("#submitbutton").removeAttr("disabled")
-    });        
-});    
+    // Method that reads and processes the selected file
+    function upload(evt) {
+    if (!browserSupportFileUpload()) {
+        alert('The File APIs are not fully supported in this browser!');
+        } else {
+            var data = null;
+            var file = evt.target.files[0];
+            var reader = new FileReader();
+            reader.readAsText(file);
+            reader.onload = function(event) {
+                var csvData = event.target.result;
+                data = $.csv.toArrays(csvData);
+                if (data && data.length > 0) {
+                  alert('Imported -' + data.length + '- rows successfully!');
+                } else {
+                    alert('No data to import!');
+                }
+            };
+            reader.onerror = function() {
+                alert('Unable to read ' + file.fileName);
+            };
+        }
+    }
+};
