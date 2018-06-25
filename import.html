@@ -3,14 +3,10 @@ layout: post
 permalink: import/
 --- 
 
-
 <h1>Uploading a CSV File</h1>
-<div id="dvImportSegments" class="fileupload ">
-  <fieldset>
-        <legend>Upload your CSV File</legend>
-            <input type="file" name="File Upload" id="csvfile" accept=".csv" />
-   </fieldset>
-</div>
+
+<b>CSV File</b> <input type="file" id="csvfile"> 
+<br />
 
 <b>Header</b> <select id="header">
 <option>true</option>
@@ -19,6 +15,5 @@ permalink: import/
 
 <br />
 <button id="submitbutton" type="button">read.csv</button>
-<script src="{{ "/js/importcsv.js" | prepend: site.baseurl}}"></script>
 
 <pre><code id="output"></code></pre>
