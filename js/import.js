@@ -1,5 +1,7 @@
 //because read.csv is in utils
-ocpu.seturl("//public.opencpu.org/ocpu/library/utils/R")
+// ocpu.seturl("http://public.opencpu.org/ocpu/library/utils/R")
+ocpu.seturl("//cloud.opencpu.org/ocpu/library/utils/R")
+
 
 //actual handler
 $("#submitbutton").on("click", function(){

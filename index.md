@@ -4,3 +4,6 @@
 
 layout: home
 ---
+Click <a href="http://127.0.0.1:4000/collect/">here</a> to <u>collect</u> your own data.
+
+Click <a href="http://127.0.0.1:4000/import2/">here</a> to <u>import</u> your own data.

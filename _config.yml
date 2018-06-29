@@ -13,12 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: D.A.N.E. (Data Analysis Nuisance Eliminator)
+title: D.A.N.E. (Data Analysis Number Evaluator)
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Data analysis has never been an easy, accessible form of research, but with
-  D.A.N.E. we sought to end at least some of this confusing process. 
-baseurl: "DANE" # the subpath of your site, e.g. /blog
+  D.A.N.E. we sought to end some of this confusing process. 
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll

@@ -4,6 +4,7 @@ permalink: import/
 --- 
 
 <h1>Uploading a CSV File</h1>
+<hr>
 
 <b>CSV File</b> <input type="file" id="csvfile"> 
 <br />
@@ -16,5 +17,11 @@ permalink: import/
 <br />
 <button id="submitbutton" type="button">read.csv</button>
 
+<!-- OpenCPU client library -->
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://cdn.opencpu.org/opencpu-0.4.js"></script>
+<script src="{{" /js/import.js" |prepend: site.baseurl}}" ></script>
+
 <pre><code id="output"></code></pre>
+
   
