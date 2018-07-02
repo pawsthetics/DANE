@@ -14,7 +14,7 @@ layout: home
             <input type="radio" name="location" value="loc1" checked> Location 1<br>
             <input type="radio" name="location" value="loc2"> Location 2<br>
             <input type="radio" name="location" value="merge"> Merged Locations
-              <br><br>
+              <br></br>
             Enter Client's Wait Time:<br>
             <input type="text" name="firstinput" required><br>
              <p>
