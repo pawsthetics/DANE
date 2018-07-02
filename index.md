@@ -14,13 +14,7 @@ layout: home
             <input type="radio" name="location" value="loc1" checked> Location 1<br>
             <input type="radio" name="location" value="loc2"> Location 2<br>
             <input type="radio" name="location" value="merge"> Merged Locations
-                <br><br>
-            <input type="radio" name="date" checked> Use Today's Date:
-            <script> document.write(new Date().toLocaleDateString()); </script>
-                <br>
-            <input type="radio" name="date" value=<button type="submit">Send</button> Enter Desired Date:
-            <input type="text" name="day"><br>
-                <br><br>
+              <br>
             Enter Client's Wait Time:<br>
             <input type="text" name="firstinput"><br>
              <p>
