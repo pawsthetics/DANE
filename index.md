@@ -22,9 +22,11 @@ layout: home
                 <br><br>
             Enter Client's Wait Time:<br>
             <input type="text" name="firstinput"><br>
+             <p>
+   				 <button type="submit">Send</button>
+  			</p>
         </form>
-        <div> <button class="button" id="complete" data-export="export">Export</button>
-        </div>
+       
     </body>
 </html>
 
