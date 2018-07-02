@@ -26,4 +26,4 @@ layout: home
 </html>
 
 <br>
-Click <a href="https://eager-mahavira-5219cd.netlify.com/import/">here</a> to <u>import</u> your own data.
+Click <a href="https://eager-mahavira-5219cd.netlify.com/import2/">here</a> to <u>import</u> your own data.
