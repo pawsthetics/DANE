@@ -5,20 +5,21 @@
 layout: home
 ---
 
+
 <html>
     <head>
     </head>
     <body>
         <form name="wait" netlify>
-            <input type="radio" name="location" value="1" checked> Location 1<br>
-            <input type="radio" name="location" value="2"> Location 2<br>
-            <input type="radio" name="location" value="Both"> Merged Locations
+            <input type="radio" name="location" value="loc1" checked> Location 1<br>
+            <input type="radio" name="location" value="loc2"> Location 2<br>
+            <input type="radio" name="location" value="merge"> Merged Locations
                 <br><br>
-            <input type="radio" name="date" value="today" checked> Use Today's Date:
+            <input type="radio" name="date" checked> Use Today's Date:
             <script> document.write(new Date().toLocaleDateString()); </script>
                 <br>
-            <input type="radio" name="date" value="day"> Enter Desired Date:
-            <input type="text" name="firstinput"><br>
+            <input type="radio" name="date" > Enter Desired Date:
+            <input type="text" name="waitTime"><br>
                 <br><br>
             Enter Client's Wait Time:<br>
             <input type="text" name="firstinput"><br>
