@@ -30,7 +30,7 @@
     function processData(csv) {
         var allTextLines = csv.split(/\r\n|\n/);
 
-        for(let i = 1; i < allTextLines.length; i++) {
+        for(let i = 0; i < allTextLines.length; i++) {
           let row = allTextLines[i].split(',');
 
           let col = [];
@@ -41,8 +41,8 @@
           array.push(col);
 
          
-    for (var  j= 1; j < array.length; ++j) {
-      var row2 = array[j];
+    for (var  k= 0; k < array.length; ++k) {
+      var row2 = array[k];
     if (by_location[row2[0]] === undefined) by_location[row2[0]] = [];
       by_location[row2[0]].push(row2[1]);
   }
