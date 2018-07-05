@@ -1,4 +1,5 @@
     var array = []
+    var by_location = {};
 
     function handleFiles(files) {
       // Check for the various File API support.
@@ -24,6 +25,8 @@
       processData(csv);
     }
 
+    
+
     function processData(csv) {
         var allTextLines = csv.split(/\r\n|\n/);
 
@@ -37,27 +40,28 @@
           }
           array.push(col);
 
-         var by_location = {};
-    for (var i = 0; i < array.length; ++i) {
-      var row = array[i];
-    if (by_location[row[0]] === undefined) by_location[row[0]] = [];
-      by_location[row[0]].push(row[1]);
-
+         
+    for (var  j= 0; j < array.length; ++j) {
+      var row2 = array[j];
+    if (by_location[row2[0]] === undefined) by_location[row2[0]] = [];
+      by_location[row2[0]].push(row2[1]);
+  }
+          }
       console.log(array);
       window.alert("Data has been successfully stored")
+      console.log(by_location);
     //test to see if its reading array properly
     //document.write(array[3][0]);
     }
-
-    function errorHandler(evt) {
+function errorHandler(evt) {
       if(evt.target.error.name == "NotReadableError") {
           alert("Canno't read file !");
       }
     }
+    
 //--------------------------------------------------------------
    
 
-    console.log(by_location);
-    console.log("hi");
+  
 
     //const result = array.filter(word => word == 'loc1');
