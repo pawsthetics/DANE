@@ -38,7 +38,7 @@
             col.push(row[j]);
           }
           array.push(col);
-          
+
           var by_location = {};
     for (var i = 0; i < array.length; ++i) {
       var row = array[i];
@@ -60,6 +60,6 @@ function errorHandler(evt) {
 //--------------------------------------------------------------
    
 
-    //console.log(by_location);
+  console.log(by_location);
 
     //const result = array.filter(word => word == 'loc1');
