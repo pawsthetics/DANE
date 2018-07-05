@@ -24,12 +24,6 @@
       processData(csv);
     }
 
-    function errorHandler(evt) {
-      if(evt.target.error.name == "NotReadableError") {
-          alert("Canno't read file !");
-      }
-    }
-
     function processData(csv) {
         var allTextLines = csv.split(/\r\n|\n/);
 
@@ -55,11 +49,15 @@
     //document.write(array[3][0]);
     }
 
-    
+    function errorHandler(evt) {
+      if(evt.target.error.name == "NotReadableError") {
+          alert("Canno't read file !");
+      }
+    }
 //--------------------------------------------------------------
    
 
     console.log(by_location);
-    console.log("hi")
+    console.log("hi");
 
     //const result = array.filter(word => word == 'loc1');
