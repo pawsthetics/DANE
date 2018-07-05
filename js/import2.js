@@ -57,6 +57,7 @@
       by_location[row[0]].push(row[1]);
   }
 
-    console.log(by_location)
+    console.log(by_location);
+    console.log("hi");
 
     //const result = array.filter(word => word == 'loc1');
