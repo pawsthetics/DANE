@@ -41,14 +41,15 @@
           array.push(col);
 
          
-    for (var i = 0; i < array.length; ++i) {
-      var row = array[i];
+    for (var  j= 0; j < array.length; ++j) {
+      var row = array[j];
     if (by_location[row[0]] === undefined) by_location[row[0]] = [];
       by_location[row[0]].push(row[1]);
   }
           }
       console.log(array);
       window.alert("Data has been successfully stored")
+      console.log(by_location);
     //test to see if its reading array properly
     //document.write(array[3][0]);
     }
@@ -61,6 +62,6 @@ function errorHandler(evt) {
 //--------------------------------------------------------------
    
 
-  console.log(by_location);
+  
 
     //const result = array.filter(word => word == 'loc1');
