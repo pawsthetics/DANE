@@ -37,7 +37,12 @@
           }
           array.push(col);
 
-        }
+         var by_location = {};
+    for (var i = 0; i < array.length; ++i) {
+      var row = array[i];
+    if (by_location[row[0]] === undefined) by_location[row[0]] = [];
+      by_location[row[0]].push(row[1]);
+
       console.log(array);
       window.alert("Data has been successfully stored")
     //test to see if its reading array properly
@@ -50,12 +55,7 @@
       }
     }
 //--------------------------------------------------------------
-    var by_location = {};
-    for (var i = 0; i < array.length; ++i) {
-      var row = array[i];
-    if (by_location[row[0]] === undefined) by_location[row[0]] = [];
-      by_location[row[0]].push(row[1]);
-  }
+   
 
     console.log(by_location);
     console.log("hi");
