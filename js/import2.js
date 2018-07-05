@@ -42,9 +42,9 @@
 
          
     for (var  j= 0; j < array.length; ++j) {
-      var row = array[j];
-    if (by_location[row[0]] === undefined) by_location[row[0]] = [];
-      by_location[row[0]].push(row[1]);
+      var row2 = array[j];
+    if (by_location[row2[0]] === undefined) by_location[row2[0]] = [];
+      by_location[row2[0]].push(row2[1]);
   }
           }
       console.log(array);
