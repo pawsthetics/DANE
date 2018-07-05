@@ -24,11 +24,7 @@
       processData(csv);
     }
 
-    function errorHandler(evt) {
-      if(evt.target.error.name == "NotReadableError") {
-          alert("Canno't read file !");
-      }
-    }
+    
 
     function processData(csv) {
         var allTextLines = csv.split(/\r\n|\n/);
@@ -48,7 +44,12 @@
     //test to see if its reading array properly
     //document.write(array[3][0]);
     }
-
+    
+function errorHandler(evt) {
+      if(evt.target.error.name == "NotReadableError") {
+          alert("Canno't read file !");
+      }
+    }
     
 //--------------------------------------------------------------
    
