@@ -1,4 +1,5 @@
     var array = []
+    var by_location = {};
 
     function handleFiles(files) {
       // Check for the various File API support.
@@ -39,7 +40,7 @@
           }
           array.push(col);
 
-          var by_location = {};
+         
     for (var i = 0; i < array.length; ++i) {
       var row = array[i];
     if (by_location[row[0]] === undefined) by_location[row[0]] = [];
