@@ -38,13 +38,12 @@
             col.push(row[j]);
           }
           array.push(col);
-
+          }
       console.log(array);
       window.alert("Data has been successfully stored")
     //test to see if its reading array properly
     //document.write(array[3][0]);
     }
-  }
 function errorHandler(evt) {
       if(evt.target.error.name == "NotReadableError") {
           alert("Canno't read file !");
