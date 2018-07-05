@@ -43,8 +43,8 @@
          
     for (var  j= 1; j < array.length; ++j) {
       var row2 = array[j];
-    if (by_location[row2[1]] === undefined) by_location[row2[1]] = [];
-      by_location[row2[1].push(row2[1]);
+    if (by_location[row2[0]] === undefined) by_location[row2[0]] = [];
+      by_location[row2[0].push(row2[1]);
   }
           }
       console.log(array);
