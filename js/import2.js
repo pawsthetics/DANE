@@ -85,14 +85,3 @@ function errorHandler(evt) {
     }
     
 //---------------------------------------------------------------------------
-
-var math = {
-
-  sum: function(by_location[row2[0]]) {
-    var num = 0;
-    for (var i = 0, l = array.length; i < l; i++) num += array[i];
-    return num;
-   }
-}
-  console.log(sum);
-
