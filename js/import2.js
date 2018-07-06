@@ -103,7 +103,6 @@ function analyze() {
    }
  }
 
-  console.log(sum)
 
 };
 
