@@ -55,7 +55,7 @@
           if (by_location[row2[0]] === undefined) by_location[row2[0]] = [];
             by_location[row2[0]].push(row2[1]);
           }
-
+          var loc1array = by_location[row2[0]];
           window.alert("Data has been successfully stored")
           console.log(by_location);
           console.log(by_location[row2[0]]);
@@ -90,7 +90,7 @@ function errorHandler(evt) {
 
 
 function analyze() {
-  var loc1array = by_location[row2[0]];
+ 
 
   var math = {
 
