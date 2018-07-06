@@ -97,8 +97,8 @@ console.log("button works");
   sum: function(loc1array) {
   var num = 0;
   for (var i = 0, l = loc1array.length; i < l; i++) num += loc1array[i];
-    console.log(num);
-    ;
+    var sum = num;
+    console.log(sum);
    }
  }
 
