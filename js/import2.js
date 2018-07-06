@@ -101,7 +101,7 @@ function analyze() {
    }
  }
 
-  console.log(sum);
+  console.log(num);
 
 };
 
