@@ -86,7 +86,7 @@ function errorHandler(evt) {
     
 //---------------------------------------------------------------------------
 
-object.onclick = function(analyze){
+object.onclick = function analyze(){
 
 var loc1array = by_location[row2[0]];
 
