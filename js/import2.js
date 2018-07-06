@@ -86,11 +86,13 @@ function errorHandler(evt) {
     
 //---------------------------------------------------------------------------
 
-object.onclick = function analyze(){
 
-var loc1array = by_location[row2[0]];
 
-var math = {
+
+function analyze() {
+  var loc1array = by_location[row2[0]];
+
+  var math = {
 
   sum: function(loc1array) {
    var num = 0;
@@ -102,3 +104,5 @@ var math = {
   console.log(sum);
 
 };
+
+
