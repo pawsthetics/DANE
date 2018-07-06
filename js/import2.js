@@ -47,7 +47,6 @@
             return val.slice(0, -2);
 
           });
-          console.log(array.length);
 
            for (var  k= 1; k < array2.length; ++k) {
       var row2 = array2[k];
@@ -62,7 +61,8 @@
           // console.log(by_location[row2[loc2]]);
             console.log(by_location);
             console.log(by_location[row2[1][0]]);
-             console.log(by_location.row2[1]);
+             console.log(by_location.row2[0]);
+              console.log(by_location.array2[0];
 
     //test to see if its reading array properly
     //document.write(array[3][0]);
