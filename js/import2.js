@@ -45,7 +45,7 @@
             return val.slice(0, -2);
 
           });
-          console.log(array1.length);
+          console.log(array.length);
 
 
           }
