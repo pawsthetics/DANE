@@ -12,6 +12,7 @@
       }
     }
 
+
     function getAsText(fileToRead) {
       var reader = new FileReader();
       // Read file into memory as UTF-8      
@@ -27,55 +28,57 @@
     }
 
     
-
     function processData(csv) {
-        var allTextLines = csv.split(/\r\n|\n/);
+      var allTextLines = csv.split(/\r\n|\n/);
 
-        for(let i = 0; i < allTextLines.length; i++) {
-          let row = allTextLines[i].split(',');
+       for(let i = 0; i < allTextLines.length; i++) {
+         let row = allTextLines[i].split(',');
 
-          let col = [];
+         let col = [];
 
-          for (let j =0; j < row.length; j++) {
-            col.push(row[j]);
+        for (let j =0; j < row.length; j++) {
+          col.push(row[j]);
+         }
+         array.push(col);
           }
-          array.push(col);
 
-          }
+//--------------------------------------------------------------------------
 
           var array2 = array.map(function(val){
             return val.slice(0, -2);
 
           });
 
-           for (var  k= 1; k < array2.length; ++k) {
-      var row2 = array2[k];
-    if (by_location[row2[0]] === undefined) by_location[row2[0]] = [];
-      by_location[row2[0]].push(row2[1]);
-  }
-      //console.log(array2);
-      window.alert("Data has been successfully stored")
-      console.log(by_location[row2[0]]);
-       //console.log(by_location[row2[0][0]]);
-        //console.log(by_location[row2[0][1]]);
-          // console.log(by_location[row2[loc2]]);
-            console.log(by_location);
-              //console.log(by_location.loc1[0]);
-               console.log(by_location[loc1[0]]);
-                console.log(by_location.row2[0]);
+
+          for (var  k= 1; k < array2.length; ++k) {
+            var row2 = array2[k];
+          if (by_location[row2[0]] === undefined) by_location[row2[0]] = [];
+            by_location[row2[0]].push(row2[1]);
+          }
+
+          window.alert("Data has been successfully stored")
+          console.log(by_location);
+          console.log(by_location[row2[0]]);
+      //console.log(by_location[row2[0][0]]);
+      //console.log(by_location[row2[0][1]]);
+      //console.log(by_location[row2[1][0]]);
+      // console.log(by_location[row2[loc2]]);
+      //console.log(by_location.loc1[0]);
+      //console.log(by_location[loc1[0]]);
+      //console.log(by_location.row2[0]);
+          console.log(by_location[row2[0, 1]])
 
     //test to see if its reading array properly
     //document.write(array[3][0]);
     }
+
+
+//---------------------------------------------------------------------------
+
 function errorHandler(evt) {
       if(evt.target.error.name == "NotReadableError") {
           alert("Canno't read file !");
       }
     }
     
-//--------------------------------------------------------------
-   
-
-  
-
-    //const result = array.filter(word => word == 'loc1');
+//---------------------------------------------------------------------------
