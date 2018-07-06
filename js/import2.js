@@ -90,15 +90,14 @@ function errorHandler(evt) {
 
 
 function analyze() {
-
+console.log("button works");
 
   var math = {
 
   sum: function(loc1array) {
-   var num = 0;
-   var sum = 1;
+  var num = 0;
   for (var i = 0, l = loc1array.length; i < l; i++) num += loc1array[i];
-     return console.log(num);
+    console.log(num);
     ;
    }
  }
