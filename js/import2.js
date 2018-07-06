@@ -90,7 +90,7 @@ function errorHandler(evt) {
 
 
 function analyze() {
-var sum = 0;
+var sum = 1;
 
   var math = {
 
@@ -102,7 +102,7 @@ var sum = 0;
    }
  }
 
-  console.log(sum
+  console.log(sum)
 
 };
 
