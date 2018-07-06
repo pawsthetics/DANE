@@ -90,14 +90,15 @@ function errorHandler(evt) {
 
 
 function analyze() {
-var sum = 1;
+
 
   var math = {
 
   sum: function(loc1array) {
    var num = 0;
+   var sum = 1;
   for (var i = 0, l = loc1array.length; i < l; i++) num += loc1array[i];
-     return sum = num
+     return console.log(num);
     ;
    }
  }
