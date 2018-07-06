@@ -45,7 +45,7 @@
             return val.slice(0, -2);
 
           });
-          console.log(array2);
+          console.log(array2.length);
 
 
          
@@ -55,7 +55,7 @@
       by_location[row2[0]].push(row2[1]);
   }
           }
-      console.log(array2);
+      //console.log(array2);
       window.alert("Data has been successfully stored")
       console.log(by_location);
     //test to see if its reading array properly
