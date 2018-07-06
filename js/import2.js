@@ -61,7 +61,7 @@
           console.log(by_location[row2[0]]);
       //console.log(by_location[row2[1]]);
       //console.log(by_location[row2[0][0]]);
-      console.log(by_location[row2[1]][1]);
+      console.log(by_location[row2[2]][1]);
       //console.log(by_location[row2[1][0]]);
       //console.log(by_location[row2[loc2]]);
       //console.log(by_location.loc1[0]);
