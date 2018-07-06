@@ -61,7 +61,7 @@
           console.log(by_location[row2[0]]);
       //console.log(by_location[row2[1]]);
       //console.log(by_location[row2[0][0]]);
-      console.log(by_location[row2[0]]["loc1"]);
+      //console.log(by_location[row2[0]]["loc1"]);
       //console.log(by_location[row2[1][0]]);
       //console.log(by_location[row2[loc2]]);
       //console.log(by_location.loc1[0]);
@@ -69,7 +69,7 @@
       //console.log(by_location.row2[0]);
       //console.log(by_location[row2[0, 1]]);
       //console.log(by_location[0]);
-          console.log(by_location.row2[0]);
+      //console.log(by_location.row2[0]);
 
     //test to see if its reading array properly
     //document.write(array[3][0]);
@@ -85,3 +85,14 @@ function errorHandler(evt) {
     }
     
 //---------------------------------------------------------------------------
+
+var math = {
+
+  sum: function(by_location[row2[0]]) {
+    var num = 0;
+    for (var i = 0, l = array.length; i < l; i++) num += array[i];
+    return num;
+   }
+}
+  console.log(sum);
+
