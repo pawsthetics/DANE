@@ -59,6 +59,7 @@
           window.alert("Data has been successfully stored")
           console.log(by_location);
           console.log(by_location[row2[0]]);
+      //console.log(by_location[row2[1]]);
       //console.log(by_location[row2[0][0]]);
       //console.log(by_location[row2[0][1]]);
       //console.log(by_location[row2[1][0]]);
@@ -67,7 +68,8 @@
       //console.log(by_location[loc1[0]]);
       //console.log(by_location.row2[0]);
       //console.log(by_location[row2[0, 1]]);
-          console.log(by_location[0]);
+      //console.log(by_location[0]);
+          console.log(row2[1]);
 
     //test to see if its reading array properly
     //document.write(array[3][0]);
