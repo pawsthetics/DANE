@@ -62,6 +62,7 @@
           // console.log(by_location[row2[loc2]]);
             console.log(by_location);
             console.log(by_location[row2[2]]);
+             console.log(by_location[row2["loc2"]]);
 
     //test to see if its reading array properly
     //document.write(array[3][0]);
