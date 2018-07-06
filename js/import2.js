@@ -62,11 +62,12 @@
       //console.log(by_location[row2[0][0]]);
       //console.log(by_location[row2[0][1]]);
       //console.log(by_location[row2[1][0]]);
-      // console.log(by_location[row2[loc2]]);
+      //console.log(by_location[row2[loc2]]);
       //console.log(by_location.loc1[0]);
       //console.log(by_location[loc1[0]]);
       //console.log(by_location.row2[0]);
-          console.log(by_location[row2[0, 1]])
+      //console.log(by_location[row2[0, 1]]);
+          console.log(by_location[row2[1]]);
 
     //test to see if its reading array properly
     //document.write(array[3][0]);
