@@ -59,6 +59,7 @@
           window.alert("Data has been successfully stored")
           console.log(by_location);
           console.log(by_location[row2[0]]);
+          console.log(loc1array);
       //console.log(by_location[row2[1]]);
       //console.log(by_location[row2[0][0]]);
       //console.log(by_location[row2[0]]["loc1"]);
@@ -94,11 +95,11 @@ console.log("button works");
 
   var math = {
 
-  sum: function(loc1array) {
+  function sum(loc1array) {
   var num = 0;
   for (var i = 0, l = loc1array.length; i < l; i++) num += loc1array[i];
-    var sum = num;
-    console.log(sum);
+    var sum1 = num;
+    console.log(sum1);
    }
  }
 
