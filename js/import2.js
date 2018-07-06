@@ -41,7 +41,7 @@
           array.push(col);
 
          
-    for (var  k= 0; k < array.length; ++k) {
+    for (var  k= 1; k < array.length; ++k) {
       var row2 = array[k];
     if (by_location[row2[0]] === undefined) by_location[row2[0]] = [];
       by_location[row2[0]].push(row2[1]);
