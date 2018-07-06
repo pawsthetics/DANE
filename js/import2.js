@@ -85,12 +85,12 @@ function errorHandler(evt) {
     }
     
 //---------------------------------------------------------------------------
-
+var loc1array = by_location[row2[0]];
 var math = {
 
-  sum: function(by_location[row2[0]]) {
+  sum: function(loc1array) {
    var num = 0;
-  for (var i = 0, l = array.length; i < l; i++) num += array[i];
+  for (var i = 0, l = loc1array.length; i < l; i++) num += loc1array[i];
     return num;
    }
  }
