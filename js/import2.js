@@ -91,7 +91,7 @@ function errorHandler(evt) {
 
 
 function analyze(loc1array) {
-console.log("button works");
+console.log("button works!");
 
   var math = {
 
