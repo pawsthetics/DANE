@@ -1,4 +1,5 @@
-    var array = []
+    var array = [];
+
     var by_location = {};
 
     function handleFiles(files) {
@@ -40,14 +41,18 @@
           }
           array.push(col);
 
-         
-    for (var  k= 1; k < array.length; ++k) {
-      var row2 = array[k];
+          }
+          var array2 = array.map(function(val){
+            return val.slice(0, -2);
+
+          });
+          console.log(array.length);
+           for (var  k= 1; k < array2.length; ++k) {
+      var row2 = array2[k];
     if (by_location[row2[0]] === undefined) by_location[row2[0]] = [];
       by_location[row2[0]].push(row2[1]);
   }
-          }
-      console.log(array);
+      //console.log(array2);
       window.alert("Data has been successfully stored")
       console.log(by_location);
     //test to see if its reading array properly

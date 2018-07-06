@@ -42,11 +42,13 @@
           array.push(col);
 
           }
+
           var array2 = array.map(function(val){
             return val.slice(0, -2);
 
           });
           console.log(array.length);
+
            for (var  k= 1; k < array2.length; ++k) {
       var row2 = array2[k];
     if (by_location[row2[0]] === undefined) by_location[row2[0]] = [];
@@ -54,7 +56,7 @@
   }
       //console.log(array2);
       window.alert("Data has been successfully stored")
-      console.log(by_location);
+      console.log(by_location[2]);
     //test to see if its reading array properly
     //document.write(array[3][0]);
     }
