@@ -91,17 +91,17 @@ function errorHandler(evt) {
 
 function analyze() {
  
-
+var sum1 = 0;
   var math = {
 
   sum: function(loc1array) {
    var num = 0;
   for (var i = 0, l = loc1array.length; i < l; i++) num += loc1array[i];
-    return num;
+    sum1 == num;
    }
  }
 
-  console.log(num);
+  console.log(sum1);
 
 };
 
