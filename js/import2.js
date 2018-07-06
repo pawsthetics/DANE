@@ -1,4 +1,5 @@
-    var array = []
+    var array = [];
+
     var by_location = {};
 
     function handleFiles(files) {
@@ -39,6 +40,13 @@
             col.push(row[j]);
           }
           array.push(col);
+
+          var array2 = array.map(function(val){
+            return val.slice(0, -2);
+
+          });
+          console.log(array2);
+
 
          
     for (var  k= 1; k < array.length; ++k) {
