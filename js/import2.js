@@ -60,7 +60,7 @@
           console.log(by_location);
           console.log(by_location[row2[0]]);
           console.log(loc1array);
-      console.log(by_location.loc1);
+      console.log(by_location['loc1']);
       //console.log(by_location[row2[0][0]]);
       //console.log(by_location[row2[0]]["loc1"]);
       //console.log(by_location[row2[1][0]]);
