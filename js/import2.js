@@ -40,7 +40,8 @@
          let col = [];
 
         for (let j =0; j < row.length; j++) {
-          col.push(parseInt(row[j]));
+          console.log(row[j]);
+          col.push(parseInt(row[j]), 10);
          }
          array.push(col);
           }
