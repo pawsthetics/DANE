@@ -42,6 +42,7 @@
         for (let j =0; j < row.length; j++) {
           var string = row[j];
           var num = string.replace(/['"]+/g, '');
+          var numparse = parseInt(num)
           col.push(num);
          }
          array.push(col);
