@@ -3,7 +3,6 @@
     var by_location = {};
     var loc1array = [];
 
-    const add = (a, b) => a + b;
 //-------------------------------------------------------------------------------
     function handleFiles(files) {
       // Check for the various File API support.
@@ -107,12 +106,7 @@ console.log("button works!");
     console.log(sum1); */
 
 function analyze() {
-const numbers = loc1array; // sums
-// function for adding two numbers. Easy!
 
-// use reduce to sum our array
-const sum = numbers.reduce(add);
-
-console.log(sum);
-
+const arrSum = loc1array => loc1array.reduce((a,b) => a + b, 0);
+console.log(arrSum);
 }
