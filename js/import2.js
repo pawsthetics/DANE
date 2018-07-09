@@ -104,7 +104,7 @@ console.log("button works!");
     var sum1 = num;
     console.log(sum1); */
 
-
+function analyze() {
 const numbers = loc1array; // sums
 // function for adding two numbers. Easy!
 
@@ -113,3 +113,4 @@ const sum = numbers.reduce(add);
 
 console.log(sum);
 
+}
