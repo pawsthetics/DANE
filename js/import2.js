@@ -35,11 +35,12 @@
       var allTextLines = csv.split(/\r\n|\n/);
 
        for(let i = 0; i < allTextLines.length; i++) {
-         let row = allTextLines[i].split();
+         let row = allTextLines[i].split(',');
 
          let col = [];
 
         for (let j =0; j < row.length; j++) {
+          Number(row[j]);
           col.push(row[j]);
          }
          array.push(col);
