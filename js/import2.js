@@ -53,6 +53,7 @@
            return val.slice(0, -2);
           });
 
+          console.log(array2);
           for (var  k= 1; k < array2.length; ++k) {
             var row2 = array2[k];
           if (by_location[row2[0]] === undefined) by_location[row2[0]] = [];
@@ -62,7 +63,7 @@
           window.alert("Data has been successfully stored")
           console.log(by_location);
           console.log(by_location[row2[0]]);
-          console.log(loc1array);
+          //console.log(loc1array);
       //console.log(by_location['loc1']);
       //console.log(by_location[row2[0][0]]);
       //console.log(by_location[row2[0]]["loc1"]);
@@ -91,6 +92,7 @@ function errorHandler(evt) {
 //---------------------------------------------------------------------------
 
 function analyze() {
+  // This is sum:
   var sum1 = 0;
   for (var r = 0; r<loc1array.length; r++){
     
@@ -98,10 +100,16 @@ function analyze() {
    }
    console.log(sum1);
 
-
-
+   // This is mean:
    var mean1 = sum1 / loc1array.length;
    console.log(mean1);
+
+   // This is variance:
+  // var variance = 
+  //   return arr1.mean(array.map(function(num) {
+  //     return Math.pow(num - mean, 2);
+  //   }));
+
 
 }
 
