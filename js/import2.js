@@ -42,8 +42,7 @@
         for (let j =0; j < row.length; j++) {
           var string = row[j];
           var num = string.replace(/['"]+/g, '');
-          var numparse = parseInt(num)
-          col.push(numparse);
+          col.push(num);
          }
          array.push(col);
          }
@@ -57,7 +56,7 @@
           for (var  k= 1; k < array2.length; ++k) {
             var row2 = array2[k];
           if (by_location[row2[0]] === undefined) by_location[row2[0]] = [];
-            by_location[row2[0]].push(row2[1]);
+            by_location[row2[0]].push(parseInt(row2[1]));
           }
           loc1array = by_location[row2[0]];
           window.alert("Data has been successfully stored")
