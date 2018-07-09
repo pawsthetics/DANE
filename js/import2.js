@@ -35,7 +35,7 @@
       var allTextLines = csv.split(/\r\n|\n/);
 
        for(let i = 0; i < allTextLines.length; i++) {
-         let row = allTextLines[i].split(,);
+         let row = allTextLines[i].split();
 
          let col = [];
 
