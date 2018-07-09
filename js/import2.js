@@ -2,6 +2,9 @@
 
     var by_location = {};
 
+    const add = (a, b) =>
+      a + b;
+
     function handleFiles(files) {
       // Check for the various File API support.
       if (window.FileReader) {
@@ -104,8 +107,7 @@ console.log("button works!");
 
 const numbers = loc1array; // sums
 // function for adding two numbers. Easy!
-const add = (a, b) =>
-  a + b;
+
 // use reduce to sum our array
 const sum = numbers.reduce(add);
 
