@@ -106,6 +106,6 @@ console.log("button works!");
 
 function analyze() {
 
-const arrSum = loc1array => loc1array.reduce((a,b) => a + b, 0);
-console.log(arrSum);
+var sum1 =  loc1array.reduce((a,b) => a + b, 0);
+console.log(sum1);
 }
