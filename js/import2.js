@@ -40,21 +40,22 @@
          let col = [];
       
 
-        for (let j =0; j < row.length-2; j++) {
-          console.log(row[j]);
-          col.push(row[j]);
+        for (let j =0; j < row.length; j++) {
+          var num = parseInt(row[j]);
+          console.log(num);
+          col.push(num);
          }
          array.push(col);
          }
 
 //--------------------------------------------------------------------------
 
-         /* var array2 = array.map(function(val){
+          var array2 = array.map(function(val){
            return val.slice(0, -2);
-          }); */
+          });
 
-          for (var  k= 1; k < array.length; ++k) {
-            var row2 = array[k];
+          for (var  k= 1; k < array2.length; ++k) {
+            var row2 = array2[k];
           if (by_location[row2[0]] === undefined) by_location[row2[0]] = [];
             by_location[row2[0]].push(row2[1]);
           }
