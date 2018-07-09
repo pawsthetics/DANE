@@ -53,8 +53,8 @@
            return val.slice(0, -2);
           }); */
 
-          for (var  k= 1; k < array2.length; ++k) {
-            var row2 = array2[k];
+          for (var  k= 1; k < array.length; ++k) {
+            var row2 = array[k];
           if (by_location[row2[0]] === undefined) by_location[row2[0]] = [];
             by_location[row2[0]].push(row2[1]);
           }
