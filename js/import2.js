@@ -109,7 +109,7 @@ const add = (a, b) =>
 // use reduce to sum our array
 const sum = numbers.reduce(add);
 
-console.log(sum;
+console.log(sum);
 
 
 
