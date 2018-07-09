@@ -3,9 +3,8 @@
     var by_location = {};
     var loc1array = [];
 
-    const add = (a, b) =>
-      a + b;
-
+    const add = (a, b) => a + b;
+//-------------------------------------------------------------------------------
     function handleFiles(files) {
       // Check for the various File API support.
       if (window.FileReader) {
