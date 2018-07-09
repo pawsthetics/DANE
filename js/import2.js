@@ -90,20 +90,6 @@ function errorHandler(evt) {
     
 //---------------------------------------------------------------------------
 
-
-
-
-/*function analyze(loc1array) {
-console.log("button works!");
-
-  var math = {
-
-  sum: function(loc1array) {
-  var num = 0;
-  for (var i = 0, l = loc1array.length; i < l; i++) num += loc1array[i];
-    var sum1 = num;
-    console.log(sum1); */
-
 function analyze() {
   var sum1 = 0;
   for (var r = 0; r<loc1array.length; r++){
@@ -111,4 +97,11 @@ function analyze() {
      sum1 += loc1array[r];
    }
    console.log(sum1);
+
+
+
+   var mean1 = sum1 / loc1array.length;
+   console.log(mean1);
+
 }
+
