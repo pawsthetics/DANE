@@ -40,7 +40,7 @@
          let col = [];
 
         for (let j =0; j < row.length; j++) {
-          col.push(Number(row[j]));
+          col.push(parseInt(row[j]));
          }
          array.push(col);
           }
