@@ -60,7 +60,7 @@
           console.log(by_location);
           console.log(by_location[row2[0]]);
           console.log(loc1array);
-      console.log(by_location['loc1']);
+      //console.log(by_location['loc1']);
       //console.log(by_location[row2[0][0]]);
       //console.log(by_location[row2[0]]["loc1"]);
       //console.log(by_location[row2[1][0]]);
@@ -90,7 +90,7 @@ function errorHandler(evt) {
 
 
 
-function analyze(loc1array) {
+/*function analyze(loc1array) {
 console.log("button works!");
 
   var math = {
@@ -99,7 +99,20 @@ console.log("button works!");
   var num = 0;
   for (var i = 0, l = loc1array.length; i < l; i++) num += loc1array[i];
     var sum1 = num;
-    console.log(sum1);
+    console.log(sum1); */
+
+
+const numbers = loc1array; // sums
+// function for adding two numbers. Easy!
+const add = (a, b) =>
+  a + b;
+// use reduce to sum our array
+const sum = numbers.reduce(add);
+
+console.log(sum;
+
+
+
    }
  }
 
