@@ -105,8 +105,9 @@ console.log("button works!");
     console.log(sum1); */
 
 function analyze() {
+  var sum1 = 0;
   for (var r = 0; r<loc1array.length; r++){
-    var sum1 = 0;
+    
      sum1 += loc1array[r];
    }
    console.log(sum1);
