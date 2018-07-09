@@ -32,14 +32,15 @@
 
     
     function processData(csv) {
-      var allTextLines = csv.split(/\r\n|\n/)
+      var allTextLines = csv.split(/\r\n|\n/).join('');
 
        for(let i = 0; i < allTextLines.length; i++) {
          let row = allTextLines[i].split(',');
 
          let col = [];
+      
 
-        for (let j =0; j < row.length-2; j++) {
+        for (let j =0; j < row.length; j++) {
           console.log(row[j]);
           col.push(row[j]);
          }
@@ -48,10 +49,9 @@
 
 //--------------------------------------------------------------------------
 
-          //var array2 = array.map(function(val){
-           // return val.slice(0, -2);
-
-          //});
+          var array2 = array.map(function(val){
+           return val.slice(0, -2);
+          });
 
           for (var  k= 1; k < array2.length; ++k) {
             var row2 = array2[k];
