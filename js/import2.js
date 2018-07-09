@@ -40,9 +40,9 @@
          let col = [];
          console.log(row.length)
 
-        for (let j =0; j < row.length; j++) {
+        for (let j =2; j < row.length; j++) {
           console.log(row[j]);
-          col.push(Number.parseInt(row[j]));
+          col.push(parseInt(row[j]));
          }
          array.push(col);
           }
