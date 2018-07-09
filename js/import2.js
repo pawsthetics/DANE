@@ -39,7 +39,7 @@
 
          let col = [];
 
-        for (let j =0; j < row.length; j++) {
+        for (let j =1; j < row.length; j++) {
           console.log(row[j]);
           col.push(parseInt(row[j]), 10);
          }
