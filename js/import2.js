@@ -113,12 +113,3 @@ const sum = numbers.reduce(add);
 
 console.log(sum);
 
-
-
-   }
- }
-
-
-};
-
-
