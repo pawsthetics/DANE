@@ -41,7 +41,7 @@
 
         for (let j =0; j < row.length; j++) {
           console.log(row[j]);
-          col.push(Number.parseInt(row[j]), 10);
+          col.push(Number.parseInt(row[j]));
          }
          array.push(col);
           }
