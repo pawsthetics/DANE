@@ -32,7 +32,7 @@
 
     
     function processData(csv) {
-      var allTextLines = csv.split(/\r\n|\n/).join('');
+      var allTextLines = csv.split(/\r\n|\n/)
 
        for(let i = 0; i < allTextLines.length; i++) {
          let row = allTextLines[i].split(',');
