@@ -41,7 +41,8 @@
       
 
         for (let j =0; j < row.length; j++) {
-          var num = parseInt(row[j]);
+          var string = row[j];
+          var num = string.replace(/['"]+/g, '');
           console.log(num);
           col.push(num);
          }
