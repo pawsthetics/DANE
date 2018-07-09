@@ -40,8 +40,7 @@
          let col = [];
 
         for (let j =0; j < row.length; j++) {
-          Number(row[j]);
-          col.push(row[j]);
+          col.push(Number(row[j]));
          }
          array.push(col);
           }
