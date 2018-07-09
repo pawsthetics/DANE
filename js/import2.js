@@ -42,18 +42,17 @@
 
         for (let j =0; j < row.length-2; j++) {
           console.log(row[j]);
-          col.push(parseInt(row[j]));
+          col.push(row[j]);
          }
          array.push(col);
           }
 
 //--------------------------------------------------------------------------
 
-          var array2 = array.map(function(val){
-            return val.slice(0, -2);
+          //var array2 = array.map(function(val){
+           // return val.slice(0, -2);
 
-          });
-
+          //});
 
           for (var  k= 1; k < array2.length; ++k) {
             var row2 = array2[k];
